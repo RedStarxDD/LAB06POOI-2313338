@@ -2,7 +2,7 @@ package banco;
 
 public class CuentaCorriente extends CuentaBancaria{
 
-	private double tasaInteresAnual = 2 ;
+	private double tasaInteresAnual = 0.2 ;
 	private double COMISIONFIJA = 2.0 ;
 	int maxRetiro ;
 		

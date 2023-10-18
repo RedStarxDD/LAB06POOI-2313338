@@ -2,7 +2,7 @@ package banco;
 
 public class CuentaCTS extends CuentaBancaria{
 	
-	private double tasaInteresAnual = 7;
+	private double tasaInteresAnual = 0.7;
 	private double puntos;
 	
 	public CuentaCTS(String numeroCuenta, String descripcionCuenta, String cuentaCCI, double puntos) {
