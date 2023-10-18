@@ -1,5 +1,7 @@
 package banco;
 
+import java.util.Arrays;
+
 public class Cliente {
 	private String idCliente;
 	private String nombre;
@@ -79,8 +81,10 @@ public class Cliente {
 	@Override
 	public String toString() {
 		return "Cliente [idCliente=" + idCliente + ", nombre=" + nombre + ", apellido=" + apellido + ", direccion="
-				+ direccion + ", telefono=" + telefono + ", dni=" + dni + "]";
+				+ direccion + ", telefono=" + telefono + ", dni=" + dni + ", cuentas=" + Arrays.toString(cuentas)
+				+ ", eventoBancarios=" + Arrays.toString(eventoBancarios) + "]";
 	}
+	
 }
 	
 	
