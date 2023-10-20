@@ -13,7 +13,7 @@ public class Main {
 		cuentaSueldo.setSaldoDisponible(1500);
 		cuentaFree.setSaldoDisponible(20000);
 		
-		CuentaBancaria[] cuentasBancarias= {cuentaFree, cuentaSueldo, cuentaCorriente1, cuentaCorriente2, cuentaCTS};		
+		CuentaBancaria[] cuentasBancarias={cuentaFree, cuentaSueldo, cuentaCorriente1, cuentaCorriente2, cuentaCTS};		
 		cliente.setCuentas(cuentasBancarias);
 		
 		System.out.println(cliente.toString());

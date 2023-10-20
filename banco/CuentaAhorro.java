@@ -16,8 +16,6 @@ public class CuentaAhorro extends CuentaBancaria{
 		return tasaInteresAnual;
 	}
 
-
-
 	public void setTasaInteresAnual(double tasaInteresAnual) {
 		this.tasaInteresAnual = tasaInteresAnual;
 	}
