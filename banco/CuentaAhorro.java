@@ -1,23 +1,19 @@
 package banco;
 
+import java.util.Arrays;
+
 public class CuentaAhorro extends CuentaBancaria{
 
-	private double tasaInteresAnual=0.3;
+	private static double tasaInteresAnual=0.3;
 	private String[] beneficios;
 
-	public CuentaAhorro(String numeroCuenta, String descripcionCuenta, String cuentaCCI, double tasaInteresAnual,
-			String[] beneficios) {
+	public CuentaAhorro(String numeroCuenta, String descripcionCuenta, String cuentaCCI, String[] beneficios) {
 		super(numeroCuenta, descripcionCuenta, cuentaCCI);
-		this.tasaInteresAnual = tasaInteresAnual;
 		this.beneficios = beneficios;
 	}
 
-	public double getTasaInteresAnual() {
+	public static double getTasaInteresAnual() {
 		return tasaInteresAnual;
-	}
-
-	public void setTasaInteresAnual(double tasaInteresAnual) {
-		this.tasaInteresAnual = tasaInteresAnual;
 	}
 
 	public String[] getBeneficios() {
@@ -30,9 +26,8 @@ public class CuentaAhorro extends CuentaBancaria{
 
 	@Override
 	public String toString() {
-		return "CuentaAhorro [tasaInteresAnual=" + tasaInteresAnual + ", beneficios=" + beneficios + ", getClass()="
-				+ getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+		return "CuentaAhorro [beneficios=" + Arrays.toString(beneficios) + ", toString()=" + super.toString() + "]";
 	}
-
+	
 }
 
