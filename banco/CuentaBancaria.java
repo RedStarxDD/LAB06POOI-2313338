@@ -5,7 +5,7 @@ public class CuentaBancaria {
 	private double saldoDisponible=0;
 	private MovimientoCuenta[] movimientos;
 	private String estado;
-		
+	
 	public CuentaBancaria(String numeroCuenta, String descripcionCuenta, String cuentaCCI) {
 		super();
 		this.numeroCuenta = numeroCuenta;
@@ -13,8 +13,12 @@ public class CuentaBancaria {
 		this.cuentaCCI = cuentaCCI;
 	}
 	
-	public void calcularInteresMensual() {
-		
+	public void calcularInteresMensual(double tasaInteresAnual) {
+	    // Calcula el interés mensual
+	    double interesMensual = Math.round((this.saldoDisponible * tasaInteresAnual/ 12)*100.0)/100.0;
+
+	    // Actualiza el saldo disponible
+	    this.saldoDisponible += interesMensual;
 	}
 
 	public String getNumeroCuenta() {

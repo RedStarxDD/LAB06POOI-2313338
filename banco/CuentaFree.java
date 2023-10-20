@@ -3,9 +3,9 @@ package banco;
 public class CuentaFree extends CuentaAhorro {
 	    private boolean numIlimitadoRetiro;
 
-		public CuentaFree(String numeroCuenta, String descripcionCuenta, String cuentaCCI, double tasaInteresAnual,
-				String[] beneficios, boolean numIlimitadoRetiro) {
-			super(numeroCuenta, descripcionCuenta, cuentaCCI, tasaInteresAnual, beneficios);
+		public CuentaFree(String numeroCuenta, String descripcionCuenta, String cuentaCCI, String[] beneficios,
+				boolean numIlimitadoRetiro) {
+			super(numeroCuenta, descripcionCuenta, cuentaCCI, beneficios);
 			this.numIlimitadoRetiro = numIlimitadoRetiro;
 		}
 

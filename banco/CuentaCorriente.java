@@ -2,13 +2,17 @@ package banco;
 
 public class CuentaCorriente extends CuentaBancaria{
 
-	private double tasaInteresAnual = 0.2 ;
-	private double COMISIONFIJA = 2.0 ;
+	private static double tasaInteresAnual = 0.2 ;
+	private static double COMISIONFIJA = 2.0 ;
 	int maxRetiro ;
 		
 	public CuentaCorriente(String numeroCuenta, String descripcionCuenta, String cuentaCCI, int maxRetiro) {
 		super(numeroCuenta, descripcionCuenta, cuentaCCI);
 		this.maxRetiro = maxRetiro;
+	}
+
+	public static double getTasaInteresAnual() {
+		return tasaInteresAnual;
 	}
 
 	public int getMaxRetiro() {

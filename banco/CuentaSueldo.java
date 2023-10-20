@@ -3,9 +3,9 @@ package banco;
 public class CuentaSueldo extends CuentaAhorro {
 	    private String nombreEmpresa;
 
-		public CuentaSueldo(String numeroCuenta, String descripcionCuenta, String cuentaCCI, double tasaInteresAnual,
-				String[] beneficios, String nombreEmpresa) {
-			super(numeroCuenta, descripcionCuenta, cuentaCCI, tasaInteresAnual, beneficios);
+		public CuentaSueldo(String numeroCuenta, String descripcionCuenta, String cuentaCCI, String[] beneficios,
+				String nombreEmpresa) {
+			super(numeroCuenta, descripcionCuenta, cuentaCCI, beneficios);
 			this.nombreEmpresa = nombreEmpresa;
 		}
 

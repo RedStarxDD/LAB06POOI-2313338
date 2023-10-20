@@ -2,24 +2,16 @@ package banco;
 
 public class CuentaAhorro extends CuentaBancaria{
 
-	private double tasaInteresAnual=0.3;
+	private static double tasaInteresAnual=0.3;
 	private String[] beneficios;
 
-	public CuentaAhorro(String numeroCuenta, String descripcionCuenta, String cuentaCCI, double tasaInteresAnual,
-			String[] beneficios) {
+	public CuentaAhorro(String numeroCuenta, String descripcionCuenta, String cuentaCCI, String[] beneficios) {
 		super(numeroCuenta, descripcionCuenta, cuentaCCI);
-		this.tasaInteresAnual = tasaInteresAnual;
 		this.beneficios = beneficios;
 	}
 
-	public double getTasaInteresAnual() {
+	public static double getTasaInteresAnual() {
 		return tasaInteresAnual;
-	}
-
-
-
-	public void setTasaInteresAnual(double tasaInteresAnual) {
-		this.tasaInteresAnual = tasaInteresAnual;
 	}
 
 	public String[] getBeneficios() {
