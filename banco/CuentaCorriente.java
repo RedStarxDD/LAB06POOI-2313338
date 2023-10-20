@@ -26,7 +26,7 @@ public class CuentaCorriente extends CuentaBancaria{
 
 	@Override
 	public String toString() {
-		return "CuentaCorriente [maxRetiro=" + maxRetiro + ", toString()=" + super.toString() + "]";
+		return "\nCuentaCorriente [maxRetiro=" + maxRetiro + ", toString()=" + super.toString() + "]";
 	}
 	
 	

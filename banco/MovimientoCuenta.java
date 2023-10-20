@@ -60,7 +60,7 @@ public class MovimientoCuenta {
 
     @Override
     public String toString() {
-        return "MovimientoCuenta{" +
+        return "\nMovimientoCuenta{" +
                 "numOperacion='" + numOperacion + '\'' +
                 ", descripcion='" + descripcion + '\'' +
                 ", fecha=" + fecha +

@@ -22,7 +22,7 @@ public class CuentaCTS extends CuentaBancaria{
 	}
 	@Override
 	public String toString() {
-		return "CuentaCTS [puntos=" + puntos + ", toString()=" + super.toString() + "]";
+		return "\nCuentaCTS [puntos=" + puntos + ", toString()=" + super.toString() + "]";
 	}
 	
 }

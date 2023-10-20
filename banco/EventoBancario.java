@@ -40,7 +40,7 @@ public class EventoBancario {
 
 	@Override
 	public String toString() {
-		return "EventoBancario [fecha=" + fecha + ", tituloEvento=" + tituloEvento + ", descripcionEvento="
+		return "\nEventoBancario [fecha=" + fecha + ", tituloEvento=" + tituloEvento + ", descripcionEvento="
 				+ descripcionEvento + "]";
 	}
 	

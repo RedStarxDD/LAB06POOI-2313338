@@ -89,8 +89,8 @@ public class Cliente {
 	@Override
 	public String toString() {
 		return "Cliente [idCliente=" + idCliente + ", nombre=" + nombre + ", apellido=" + apellido + ", direccion="
-				+ direccion + ", telefono=" + telefono + ", dni=" + dni + ", cuentas=" + Arrays.toString(cuentas)
-				+ ", eventoBancarios=" + Arrays.toString(eventoBancarios) + "]";
+				+ direccion + ", telefono=" + telefono + ", dni=" + dni + ",\ncuentas=" + Arrays.toString(cuentas)
+				+ ",\neventoBancarios=" + Arrays.toString(eventoBancarios) + "]";
 	}
 	
 }
