@@ -1,5 +1,7 @@
 package banco;
 
+import java.util.Arrays;
+
 public class CuentaBancaria {
 	private String numeroCuenta, descripcionCuenta, cuentaCCI;
 	private double saldoDisponible=0;
@@ -17,13 +19,10 @@ public class CuentaBancaria {
 
 	  public void calcularInteresMensual(double tasaInteresAnual) {
 	    // Calcula el interés mensual
-	    double interesMensual = Math.round((this.saldoDisponible * tasaInteresAnual/ 12)*100.0)/100*0;
-
+	    double interesMensual = Math.round((this.saldoDisponible * tasaInteresAnual/ 12)*100.00)/100.00;
 	    
 	    // Actualiza el saldo disponible
 	    this.saldoDisponible += interesMensual;
-	   
-	    System.out.println(interesMensual);
 	}
 	
 	public String getNumeroCuenta() {
@@ -62,10 +61,15 @@ public class CuentaBancaria {
 		return movimientos;
 	}
 
+	public void setMovimientos(MovimientoCuenta[] movimientos) {
+		this.movimientos = movimientos;
+	}
+
 	@Override
 	public String toString() {
 		return "CuentaBancaria [numeroCuenta=" + numeroCuenta + ", descripcionCuenta=" + descripcionCuenta
-				+ ", cuentaCCI=" + cuentaCCI + ", saldoDisponible=" + saldoDisponible + ", estado=" + estado + "]";
+				+ ", cuentaCCI=" + cuentaCCI + ", saldoDisponible=" + saldoDisponible + ", movimientos="
+				+ Arrays.toString(movimientos) + ", estado=" + estado + "]";
 	}
 	
 	

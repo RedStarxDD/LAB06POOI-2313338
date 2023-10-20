@@ -19,8 +19,7 @@ public class CuentaFree extends CuentaAhorro {
 
 		@Override
 		public String toString() {
-			return "CuentaFree [numIlimitadoRetiro=" + numIlimitadoRetiro + ", isNumIlimitadoRetiro()="
-					+ isNumIlimitadoRetiro() + "]";
+			return "CuentaFree [numIlimitadoRetiro=" + numIlimitadoRetiro + ", toString()=" + super.toString() + "]";
 		}
 
 }

@@ -19,10 +19,8 @@ public class CuentaSueldo extends CuentaAhorro {
 
 		@Override
 		public String toString() {
-			return "CuentaSueldo [nombreEmpresa=" + nombreEmpresa + ", getNombreEmpresa()=" + getNombreEmpresa() + "]";
+			return "CuentaSueldo [nombreEmpresa=" + nombreEmpresa + ", toString()=" + super.toString() + "]";
 		}
-
-
 
 
 }

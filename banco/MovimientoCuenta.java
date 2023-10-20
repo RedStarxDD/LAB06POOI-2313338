@@ -9,20 +9,16 @@ public class MovimientoCuenta {
     private Date fecha;
     private double importe;
     private String tipoOperacion;
-    private CuentaBancaria cuentaBancaria;
 
-    public MovimientoCuenta(String numOperacion, String descripcion, Date fecha, double importe, String tipoOperacion,
-			CuentaBancaria cuentaBancaria) {
-		super();
-		this.numOperacion = numOperacion;
-		this.descripcion = descripcion;
-		this.fecha = fecha;
-		this.importe = importe;
-		this.tipoOperacion = tipoOperacion;
-		this.cuentaBancaria = cuentaBancaria;
-	}
+    public MovimientoCuenta(String numOperacion, String descripcion, Date fecha, double importe, String tipoOperacion) {
+        this.numOperacion = numOperacion;
+        this.descripcion = descripcion;
+        this.fecha = fecha;
+        this.importe = importe;
+        this.tipoOperacion = tipoOperacion;
+    }
 
-	public String getNumOperacion() {
+    public String getNumOperacion() {
         return numOperacion;
     }
 

@@ -1,5 +1,7 @@
 package banco;
 
+import java.util.Arrays;
+
 public class CuentaAhorro extends CuentaBancaria{
 
 	private static double tasaInteresAnual=0.3;
@@ -24,9 +26,8 @@ public class CuentaAhorro extends CuentaBancaria{
 
 	@Override
 	public String toString() {
-		return "CuentaAhorro [tasaInteresAnual=" + tasaInteresAnual + ", beneficios=" + beneficios + ", getClass()="
-				+ getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+		return "CuentaAhorro [beneficios=" + Arrays.toString(beneficios) + ", toString()=" + super.toString() + "]";
 	}
-
+	
 }
 
