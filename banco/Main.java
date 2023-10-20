@@ -37,6 +37,18 @@ public class Main {
         cuentaSueldo.setSaldoDisponible(1500);
 		cuentaFree.setSaldoDisponible(20000);
 		
+		MovimientoCuenta movimientocuenta1 =new MovimientoCuenta("7503627890", "Descripción de la operación 10", new Date(), 100.00, "Crédito");
+		MovimientoCuenta movimientocuenta2 =new MovimientoCuenta("7890269012", "Descripción de la operación 9", new Date(), 120.00, "Crédito");
+		MovimientoCuenta movimientocuenta3 =new MovimientoCuenta("2346788901", "Descripción de la operación 8", new Date(), 640.00, "Débito");
+		MovimientoCuenta movimientocuenta4 =new MovimientoCuenta("8904567890", "Descripción de la operación 7", new Date(), 100.00, "Crédito");
+		MovimientoCuenta movimientocuenta5 =new MovimientoCuenta("4566788901", "Descripción de la operación 5", new Date(), 400.00, "Débito");
+		MovimientoCuenta movimientocuenta6 =new MovimientoCuenta("6787899012", "Descripción de la operación 6", new Date(), 530.00, "Crédito");
+		MovimientoCuenta movimientocuenta7 =new MovimientoCuenta("8904567890", "Descripción de la operación 7", new Date(), 100.00, "Crédito");
+		MovimientoCuenta movimientocuenta8 =new MovimientoCuenta("2346788901", "Descripción de la operación 8", new Date(), 640.00, "Débito");
+		MovimientoCuenta movimientocuenta9 =new MovimientoCuenta("7890269012", "Descripción de la operación 9", new Date(), 120.00, "Crédito");
+		MovimientoCuenta movimientocuenta10 =new MovimientoCuenta("7503627890", "Descripción de la operación 10", new Date(), 100.00, "Crédito");
+		
+		MovimientoCuenta[] movimientoscuentas= {movimientocuenta1,movimientocuenta2,movimientocuenta3,movimientocuenta4,movimientocuenta5,movimientocuenta6,movimientocuenta7,movimientocuenta8,movimientocuenta9,movimientocuenta10};
 		
 		
 		CuentaBancaria[] cuentasBancarias= {cuentaFree, cuentaSueldo, cuentaCorriente1, cuentaCorriente2, cuentaCTS};		
